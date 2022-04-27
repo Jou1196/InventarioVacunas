@@ -7,4 +7,6 @@ Realice la persistencia de mis entidades y realice los endpoints de las tablas d
 Realice la documentacion por medio Swagger donde datallo toda la documentacion de la aplicacion ;
 Realice 3 querys para que pueda filtrar por tipo de vacuna , estado de vacuna y finalmente rango de fechas de vacunacion ;
 Adicional la base de datos la hice en Power Architect;
+Una vez ejecutado el programa en un entorno nuevo puede acceder al siguinte link para ver la documentacion y la visualizacion de las apis REST :
+http://localhost:8080/swagger-ui-custom.html
 
