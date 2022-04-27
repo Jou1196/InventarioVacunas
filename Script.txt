@@ -1,0 +1,28 @@
+CREATE TABLE public.EMPLEADOS (
+                pk_cedula NUMERIC(10) NOT NULL,
+                Nombres CHAR(40) NOT NULL,
+                Apellidos CHAR(30) NOT NULL,
+                Correo_Electronico VARCHAR(20) NOT NULL,
+                CONSTRAINT empleados_pk PRIMARY KEY (pk_cedula)
+);
+
+
+CREATE TABLE public.INFO_EMPLEADO (
+                pk_cedula NUMERIC(10) NOT NULL,
+                Fecha_de_Nacimineto DATE NOT NULL,
+                Direccion_Domicilio VARCHAR(30) NOT NULL,
+                Telefono_Movil NUMERIC(10) NOT NULL,
+                Estado_Vacunacion VARCHAR(10) NOT NULL,
+                Tipo_Vacuna VARCHAR(20),
+                Fecha_Vacuna DATE,
+                Numero_Dosis VARCHAR(10),
+                CONSTRAINT info_empleado_pk PRIMARY KEY (pk_cedula)
+);
+
+
+ALTER TABLE public.INFO_EMPLEADO ADD CONSTRAINT empleados_info_empleado_fk
+FOREIGN KEY (pk_cedula)
+REFERENCES public.EMPLEADOS (pk_cedula)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
