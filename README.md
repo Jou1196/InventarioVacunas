@@ -1,4 +1,5 @@
 # InventarioVacunas
+El proyecto se encuentra en la rama main
 Envio el script donde creo la base de datos relacion utilizando el gestor de base de datos PostgreSQL; 
 Creo la base de datos con el nombre Inventario_Empleado y mediante un script de SQL dentro de postgres ejecuto el script enviado ;
 Una vez realizado el paso anterior en el application.properties configuro mis datos acorde al ingreso en mi caso mi usuario era postgres y mi password 1234 ;
